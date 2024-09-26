@@ -1,6 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import travelwebsite from "../assets/img/travelwebsite.png";
+import foodsource from "../assets/img/foodsource.png";
+import meterphatse from "../assets/img/meterphatse.png"
 import projImg1 from "../assets/img/project-img1.png";
+import chatappln from "../assets/img/chatappln.jpg";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -11,35 +15,26 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Real Time Chat Aplication",
+      description: "Using Mongo,React,Express,Node and Socket.io",
+      imgUrl: chatappln,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Travel Website including hotel booking and route planning",
+      description: "JavaScript,ReactJs, Redux, ChakraUi nodeJs, expressJs,MongoDb",
+      imgUrl: travelwebsite,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Food Ordering Website",
+      description: "Mongo,React,Express,Node",
+      imgUrl: foodsource,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Internship work of event management website",
+      description: "React,redux,next,postgre",
+      imgUrl: meterphatse,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+   
   ];
 
   return (
@@ -51,19 +46,9 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>I have developed multiple full-stack projects using the MERN stack, focusing on building real-time, scalable, and performance-optimized web applications</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
+               
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>

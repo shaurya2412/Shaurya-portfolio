@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import coat from "../assets/img/coat.jpg";
+import Shaurya1 from "../assets/img/Shaurya1.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -68,12 +68,12 @@ performance and implementing the latest technologies.
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
-          </Col>S
+          </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={coat} alt="Header Img"/>
+                  <img src={Shaurya1} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>
