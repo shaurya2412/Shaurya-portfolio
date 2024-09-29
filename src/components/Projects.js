@@ -3,6 +3,12 @@ import { ProjectCard } from "./ProjectCard";
 import travelwebsite from "../assets/img/travelwebsite.png";
 import foodsource from "../assets/img/foodsource.png";
 import meterphatse from "../assets/img/meterphatse.png"
+import metermygrupr from "../assets/img/metermygrupr.png"
+import mygrupr from "../assets/img/mygrupr.png"
+
+
+import ecomm from "../assets/img/ecomm.png";
+
 import projImg1 from "../assets/img/project-img1.png";
 import chatappln from "../assets/img/chatappln.jpg";
 import projImg2 from "../assets/img/project-img2.png";
@@ -19,22 +25,34 @@ export const Projects = () => {
       description: "Using Mongo,React,Express,Node and Socket.io",
       imgUrl: chatappln,
     },
+  {
+      title: "React Native mobile application",
+      description: "React, Nest js, Clerk(auth),docker,CI/CD",
+      imgUrl: mygrupr,
+    },
     {
-      title: "Travel Website including hotel booking and route planning",
+      title: "Ecommerce website",
       description: "JavaScript,ReactJs, Redux, ChakraUi nodeJs, expressJs,MongoDb",
-      imgUrl: travelwebsite,
+      imgUrl: ecomm,
     },
-    {
-      title: "Food Ordering Website",
-      description: "Mongo,React,Express,Node",
-      imgUrl: foodsource,
-    },
+    
     {
       title: "Internship work of event management website",
       description: "React,redux,next,postgre",
       imgUrl: meterphatse,
+    },  {
+      title: "Travel Website including hotel booking and route planning",
+      description: "JavaScript,ReactJs, Redux, ChakraUi nodeJs, expressJs,MongoDb",
+      imgUrl: travelwebsite,
     },
+    // {
+    //   title: "Internship work of event management website",
+    //   description: "React,redux,next,postgre",
+    //   imgUrl: mygrupr,
+    // },
    
+   
+    
   ];
 
   return (

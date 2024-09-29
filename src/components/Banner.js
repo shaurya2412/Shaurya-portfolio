@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Frontend Developer", "Web Designer", "Backend Developer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,15 +55,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Shaurya Saxena`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>A enthusiastic Web Developer, passionate about frontend design and
-JavaScript development. Offering expertise in Full-stack development
-with experience of working with multiple live projects. Having strong
-focus on innovation and user-centric design. Brings extensive
-experience in crafting responsive, mobile-friendly websites that deliver
-exceptional user experiences. Specialized in optimizing website
-performance and implementing the latest technologies.
+                <span className="tagline">Welcome to my World!</span>
+                <h1>{`Hi! I'm Shaurya Saxena`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Frontend Developer", "Backend Developer"]'><span className="wrap">{text}</span></span></h1>
+                  <p>Hello, I am Shaurya Saxena, a 4th-year B.Tech CSE student at Bennett University, and a passionate Full-Stack Web Developer. I have experience working on live projects, specializing in responsive, user-focused design, and optimized website performance. Skilled in both Front-End and Back-End development, I also bring a solid foundation in Data Structures, Algorithms, and DevOps, enhancing my ability to manage complete development and deployment processes.
 </p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
